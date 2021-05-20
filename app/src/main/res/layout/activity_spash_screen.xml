@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpashScreen">
+
+    <ImageView
+        android:layout_width="347dp"
+        android:layout_height="347dp"
+        android:src="@drawable/ellipse2"
+        android:layout_marginStart="-134dp"
+        android:layout_marginTop="-136dp" />
+
+    <ImageView
+        android:layout_width="347dp"
+        android:layout_height="347dp"
+        android:src="@drawable/ellipse2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-134dp"
+        android:layout_marginBottom="-136dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textView_splashScreen_logoRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView_splashScreen_logoLeft"
+            android:layout_alignBottom="@+id/textView_splashScreen_logoLeft"
+            android:text="igicus"
+            android:fontFamily="@font/nexabold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="0dp"
+            android:textSize="65sp"/>
+
+        <TextView
+            android:id="@+id/textView_splashScreen_logoLeft"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/nexabold"
+            android:text="D"
+            android:textAlignment="textEnd"
+            android:textSize="140sp"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</RelativeLayout>
